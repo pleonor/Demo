@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | AR orientada a Objetos</title>
+    <title>AR orientada a Objetos</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
         html{
@@ -54,8 +54,8 @@
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <div id="startARDiv" class="ctaDiv">
         <select id="chooseCamSel" style="display: none;" onchange="SelectCam()"></select>
-        <p style="text-align: center; width:60vw;">This augmented reality experience requires access to your device's camera</p>
-        <button id="startCameraBtn" onclick="StartAR()" style="display:none">ALLOW ACCESS</button>
+        <p style="text-align: center; width:60vw;">Esta experiencia de realidad aumentada requiere acceso a la cámara de su dispositivo.</p>
+        <button id="startCameraBtn" onclick="StartAR()" style="display:none">PERMITIR</button>
     </div>
     <!-- ENABLE THIS FOR WECHAT -->
     <!-- <div id="startWebcamManuallyDiv" style="display: none" class="ctaDiv">
@@ -82,7 +82,7 @@
             document.getElementById("startCameraBtn").style.display = "block";
         });
     </script>
-    <script src="Build/AR_Demo_12.loader.js"></script>
+    <script src="Build/POO_P1.loader.js"></script>
     <script>
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
@@ -94,9 +94,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/AR_Demo_12.data",
-                    frameworkUrl: "Build/AR_Demo_12.framework.js",
-                    codeUrl: "Build/AR_Demo_12.wasm",
+                    dataUrl: "Build/POO_P1.data",
+                    frameworkUrl: "Build/POO_P1.framework.js",
+                    codeUrl: "Build/POO_P1.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "AR orientada a Objetos",
